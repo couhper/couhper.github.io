@@ -261,8 +261,8 @@
 
     body.list-view .link-card:hover .arrow { opacity: 1; }
 
-    /* ── Search: empty state ── */
-    .section[data-visible="false"] { display: none; }
+    /* ── Search: hide non-matching cards ── */
+    .link-card[hidden] { display: none !important; }
 
     .no-results {
       text-align: center;
